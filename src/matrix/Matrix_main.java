@@ -1,0 +1,17 @@
+package matrix;
+
+import java.util.Arrays;
+
+public class Matrix_main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double a[][] = {{ 0, 1 },{ 2, 0 },{ 0, 3 }};
+		double b[][] = {{ 1, -1, 2 },{ 3, 0, 4 }};
+		
+		Matrix_lib mlib = new Matrix_lib(a, b);
+		System.out.println("Product = "+ Arrays.deepToString(mlib.getProduct()));
+		System.out.println("b‚Ì“]’us—ñ@= "+ Arrays.deepToString(mlib.getTranspose(b)));
+	}
+
+}
